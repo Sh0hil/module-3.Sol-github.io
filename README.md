@@ -1,101 +1,78 @@
 <!DOCTYPE html>
- <html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        nav a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    float: left;
 
-}
-nav{
-    background-color: black;
-    overflow: hidden;
-}
-nav a:hover{
-    color: tomato;
-}
-nav a:visited{
-    color: royalblue;
-}
-.container{
-   background-color: lightcyan;
-   padding: 5px 20px 15px 20px;
-   border: 1px solid lightgray;
-   border-radius: 6px;
-}
-#u22{
-    text-align: center;
+<title>Module 3</title>
 
-}
-#u23{
-    text-align: center;
-}
-
- 
-    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
 <body>
-    <div class="container" >
-    <!-- As a link -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">FOOD,LCC</a>
+
+
+<nav class="navbar" id="top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
+    </div>
+
+    <div class="collapse" id="myNavbar">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a class="menu-item" href="#">Chicken</a></li>
+        <li><a class="menu-item" href="#">Beef</a></li> 
+        <li><a class="menu-item" href="#">Sushi</a></li> 
+      </ul>
+    </div>
+
+  </div>
 </nav>
 
-<!-- As a heading -->
-<nav class="navbar navbar-light bg-light"  >
-  <span class="navbar-brand mb-0 h1">Navbar</span>
-</nav>
-    <header>
-        <h1 id="u22" >Our Menu</h1>
-    </header>  <hr><hr>
-    <div >
-    <p >
-        <fieldset >
-            <legend id="u23" > <h2 >Chicken</h2> </legend>
-             <p >Lorem ipsum dolor sit amet consectetur 
-              adipisicing elit. Temporibus eos nostrum 
-              in molestias unde beatae nam quibusdam  
-               accusantium, illum est neque qui aut quis 
-               odit assumenda fuga, deserunt quo nobis?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti reprehenderit voluptas veritatis perspiciatis distinctio ad nesciunt enim soluta. Repudiandae, aut esse? Deserunt harum sit at natus reiciendis assumenda sunt ut. Neque accusantium eum similique obcaecati? Possimus perspiciatis libero velit ipsam obcaecati illo praesentium et iusto exercitationem natus, magnam at expedita vel corrupti?</p>
-        </fieldset>
-    </p> <hr>
-    <p  >
-        <fieldset>
-            <legend id="u23"> <h2  >Beef</h2> </legend>
-             <p >Lorem ipsum dolor sit amet consectetur 
-              adipisicing elit. Temporibus eos nostrum 
-              in molestias unde beatae nam quibusdam  
-               accusantium, illum est neque qui aut quis 
-               odit assumenda fuga, deserunt quo nobis?
-            Lorem ipsum dolor sit amet consectetur,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse perferendis id vel. Et enim nam reprehenderit cum, dignissimos reiciendis, exercitationem facilis debitis aut aperiam ut nihil temporibus odit natus? adipisicing elit. Incidunt at laudantium adipisci corporis vero molestias quod magnam obcaecati in voluptates a repellendus, ipsam magni itaque nemo voluptate aliquam aspernatur perspiciatis.</p>
-        </fieldset>
-    </p> </div> <hr>
-    <p  >
-        <fieldset>
-            <legend id="u23"> <h2  >Sushi</h2> </legend>
-             <p   >Lorem ipsum dolor sit amet consectetur 
-              adipisicing elit. Temporibus eos nostrum 
-              in molestias unde beatae nam quibusdam  
-               accusantium, illum est neque qui aut quis 
-               odit assumenda fuga, deserunt quo nobis?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            Lorem ipsum dolor sit amet consectetur,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quam impedit esse incidunt dolores autem error necessitatibus adipisci molestiae, accusamus obcaecati ea officiis soluta culpa laborum delectus! Assumenda, quas eum. adipisicing elit. Inventore tempora, nisi facere quod explicabo magni nemo placeat ipsum illo corrupti a esse, nobis tenetur adipisci id omnis. Quasi, itaque animi? doloremque dignissimos fugit aut? Nobis nemo unde vero, ipsam vel reiciendis, reprehenderit molestiae cumque rerum temporibus consectetur nihil quasi voluptate eligendi. Quod labore dolorum ipsum repudiandae, veritatis non adipisci. A sed mollitia accusantium deleniti obcaecati assumenda, quo error ea fuga esse velit sapiente.</p>
-        </fieldset>
-    </p> <hr><hr>
+<h1 class="main-title">Our Menu</h1>
+
+
+
+<div class="row">
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Chicken</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Beef</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Sushi</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
 </div>
+ <hr>
+
 
 </body>
 </html>
